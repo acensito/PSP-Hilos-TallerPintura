@@ -1,24 +1,14 @@
-# Ejercicio de Hilos: Fabrica de bicicletas
+# 🎨 Ejercicio de Hilos: Taller de Pintura  
 
-## 🚲 Fabrica de piezas
-Tendremos una fabrica de piezas de bicicletas, donde se fabrican las piezas de las bicicletas y se embalan para enviar al taller de armado de bicicletas. 
+En el **taller de pintura** hay **una sala de pintura** y **tres pintores**.  
+Cada pintor tarda entre **15 y 30 minutos** (*simulados en segundos*) en pintar un coche 🚗.  
+Después, **descansa el mismo tiempo** para recuperar energía y respirar aire limpio.  
 
-En dicha fabrica trabajan **cinco operarios**, que tienen una **cadencia entre 3 y 5 minutos para completar un paquete de piezas** y enviarlo al almacen de piezas a la espera de que el taller de armado de bicicletas lo retire. Cada trabajador tras completar un paquete de piezas **descansa entre 2 y 5 minutos** antes de poder comenzar a trabajar en un nuevo paquete de piezas.
+## 🏗️ Funcionamiento  
+- 🖌️ **Solo un coche** puede ser pintado a la vez, ya que hay **una única sala de pintura**.  
+- 🅿️ El taller dispone de un **descampado con capacidad para 50 coches**, donde esperan su turno.  
+- ✅ Una vez pintado, el coche **sale del taller**, permitiendo que otro entre.  
+- 🔄 Al ingresar un coche a la sala de pintura, **se libera un espacio en el descampado** para un nuevo cliente.  
 
-Los trabajadores de la fabrica de piezas de bicicletas **no produciran mas piezas si el almacen de piezas esta lleno**, es decir, si hay mas de 10 paquetes de piezas en el almacen de piezas.
-
-## 🚲 Almacen de piezas
-Tendrá un almacen de piezas con **capacidad para 15 paquetes de piezas.** Cuando el almacen de piezas esta lleno, los trabajadores de la fabrica de piezas de bicicletas no producen mas piezas. Cuando el nivel de piezas en el almacen de piezas **baja**, los trabajadores de la fabrica de piezas de bicicletas vuelven a producir piezas.
-
-## 🚲 Taller de armado
-En el taller de armado de bicicletas, se reciben los paquetes de piezas y se arman las bicicletas. Tienen una **cadencia entre 5 y 8 minutos para armar una bicicleta** y enviarla al deposito de bicicletas.
-
-En dicho taller trabajan tres operarios, que tras armar una bicicleta **descansan entre 2 y 3 minutos antes de comenzar a armar una nueva bicicleta**. 
-
-## 🏗️ Funcionamiento
-- 🚲 Solo se pueden fabricar piezas **si hay espacio en el almacen de piezas**.
-- 🚲 Solo se pueden armar bicicletas **si hay piezas en el almacen de piezas**.
-- 🚲 El taller dispone de un **deposito de bicicletas con capacidad para 25 bicicletas**, donde se almacenan las bicicletas armadas.
-- Cuando el deposito de bicicletas esta lleno, se ha completado la producción, finalizandose la aplicacion y marchandose todos los operarios a sus casas.
-- Los minutos vendran a ser **simulados como segundos en la aplicacion**.
-
+## 🚀 Extensión del Ejercicio  
+Como mejora, se propone modificar el sistema para que el taller cuente con **dos salas de pintura**, permitiendo que **dos coches sean pintados al mismo tiempo**.  
